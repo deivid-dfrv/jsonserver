@@ -1,1 +1,24 @@
-<p>home works!</p>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of arrFruits; track $index) {
+                <tr>
+                    <th scope="row">{{item.id}}</th>
+                    <th>{{item.name}}</th>
+                    <th>{{item.quantity}}</th>
+                    <th>{{item.price}}</th>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+
+</div>
